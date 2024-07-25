@@ -1,0 +1,13 @@
+2024-07-24 10:18:02,622 - INFO - Scraping page 1 at http://quotes.toscrape.com/page/1/
+2024-07-24 10:18:10,632 - INFO - Scraping page 2 at http://quotes.toscrape.com/page/2/
+2024-07-24 10:18:14,301 - INFO - Scraping page 3 at http://quotes.toscrape.com/page/3/
+2024-07-24 10:18:17,830 - INFO - Scraping page 4 at http://quotes.toscrape.com/page/4/
+2024-07-24 10:18:21,431 - INFO - Scraping page 5 at http://quotes.toscrape.com/page/5/
+2024-07-24 10:18:24,979 - INFO - Scraping page 6 at http://quotes.toscrape.com/page/6/
+2024-07-24 10:18:28,511 - INFO - Scraping page 7 at http://quotes.toscrape.com/page/7/
+2024-07-24 10:18:32,052 - INFO - Scraping page 8 at http://quotes.toscrape.com/page/8/
+2024-07-24 10:18:35,576 - INFO - Scraping page 9 at http://quotes.toscrape.com/page/9/
+2024-07-24 10:18:39,131 - INFO - Scraping page 10 at http://quotes.toscrape.com/page/10/
+2024-07-24 10:18:42,622 - INFO - Scraping page 11 at http://quotes.toscrape.com/page/11/
+2024-07-24 10:18:46,594 - INFO - Data saved to quotes_data.xlsx
+2024-07-24 10:18:46,594 - INFO - Data scraped successfully from http://quotes.toscrape.com

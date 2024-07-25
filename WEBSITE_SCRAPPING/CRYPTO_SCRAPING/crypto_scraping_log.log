@@ -1,0 +1,26 @@
+2024-07-25 12:02:07,527 - INFO - Scraping page 1 at https://www.coingecko.com/en?page=1
+2024-07-25 12:02:15,727 - INFO - Processing page 1
+2024-07-25 12:02:18,893 - INFO - Processing page 2
+2024-07-25 12:02:21,647 - INFO - Processing page 3
+2024-07-25 12:02:23,936 - INFO - Data saved to crypto_data.xlsx
+2024-07-25 12:02:23,936 - INFO - Data scraping with pagination completed.
+2024-07-25 12:02:26,070 - INFO - WebDriver closed.
+2024-07-25 12:04:34,249 - INFO - Scraping page 1 at https://www.coingecko.com/en?page=1
+2024-07-25 12:04:40,198 - INFO - Processing page 1
+2024-07-25 12:04:41,756 - INFO - Processing page 2
+2024-07-25 12:04:43,087 - INFO - Processing page 3
+2024-07-25 12:04:45,244 - INFO - Data saved to crypto_data.xlsx
+2024-07-25 12:04:45,244 - INFO - Data scraping with pagination completed.
+2024-07-25 12:04:47,381 - INFO - WebDriver closed.
+2024-07-25 12:06:06,305 - INFO - Scraping page 1 at https://www.coingecko.com/en?page=1
+2024-07-25 12:06:12,095 - INFO - total_pages 1
+2024-07-25 12:06:13,594 - INFO - total_pages 2
+2024-07-25 12:06:15,108 - INFO - total_pages 3
+2024-07-25 12:06:18,273 - INFO - Data saved to crypto_data.xlsx
+2024-07-25 12:06:18,278 - INFO - Data scraping with pagination completed.
+2024-07-25 12:06:20,426 - INFO - WebDriver closed.
+2024-07-25 12:07:53,403 - INFO - Scraping page 1 at https://www.coingecko.com/en?page=1
+2024-07-25 12:07:59,407 - INFO - Processing page 1
+2024-07-25 12:08:01,767 - INFO - Data saved to crypto_data.xlsx
+2024-07-25 12:08:01,767 - INFO - Data scraping with pagination completed.
+2024-07-25 12:08:03,906 - INFO - WebDriver closed.

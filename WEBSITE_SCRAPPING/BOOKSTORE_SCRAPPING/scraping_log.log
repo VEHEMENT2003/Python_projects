@@ -1,0 +1,28 @@
+2024-07-23 22:31:48,380 - INFO - Scraping page 1 at https://www.linkedin.com/search/results/people/?keywords=python%20developer&page=1
+2024-07-23 22:32:00,856 - INFO - Scraping page 2 at https://www.linkedin.com/search/results/people/?keywords=python%20developer&page=2
+2024-07-23 22:32:07,111 - INFO - Scraping page 3 at https://www.linkedin.com/search/results/people/?keywords=python%20developer&page=3
+2024-07-23 22:32:13,194 - INFO - Scraping page 4 at https://www.linkedin.com/search/results/people/?keywords=python%20developer&page=4
+2024-07-23 22:32:19,073 - INFO - Scraping page 5 at https://www.linkedin.com/search/results/people/?keywords=python%20developer&page=5
+2024-07-23 22:32:26,209 - INFO - Data saved to linkedin_data.xlsx
+2024-07-23 22:32:26,211 - INFO - Data scraped successfully from https://www.linkedin.com/search/results/people/?keywords=python%20developer
+2024-07-23 22:36:52,626 - INFO - Scraping page 1 at https://www.linkedin.com/search/results/people/?keywords=python%20developer&page=1
+2024-07-23 22:37:01,517 - INFO - Scraping page 2 at https://www.linkedin.com/search/results/people/?keywords=python%20developer&page=2
+2024-07-23 22:37:07,631 - INFO - Scraping page 3 at https://www.linkedin.com/search/results/people/?keywords=python%20developer&page=3
+2024-07-23 22:37:13,645 - INFO - Scraping page 4 at https://www.linkedin.com/search/results/people/?keywords=python%20developer&page=4
+2024-07-23 22:37:19,695 - INFO - Scraping page 5 at https://www.linkedin.com/search/results/people/?keywords=python%20developer&page=5
+2024-07-23 22:37:26,310 - INFO - Data saved to linkedin_data.xlsx
+2024-07-23 22:37:26,311 - INFO - Data scraped successfully from https://www.linkedin.com/search/results/people/?keywords=python%20developer
+2024-07-24 10:01:12,309 - INFO - Scraping page 1 at http://books.toscrape.com/catalogue/page-1.html
+2024-07-24 10:01:20,435 - INFO - Scraping page 2 at http://books.toscrape.com/catalogue/page-2.html
+2024-07-24 10:01:24,981 - INFO - Scraping page 3 at http://books.toscrape.com/catalogue/page-3.html
+2024-07-24 10:01:29,479 - INFO - Scraping page 4 at http://books.toscrape.com/catalogue/page-4.html
+2024-07-24 10:01:33,997 - INFO - Scraping page 5 at http://books.toscrape.com/catalogue/page-5.html
+2024-07-24 10:01:39,821 - INFO - Data saved to scraped_data.xlsx
+2024-07-24 10:01:39,821 - INFO - Data scraped successfully from http://books.toscrape.com
+2024-07-24 10:14:55,225 - INFO - Scraping page 1 at http://books.toscrape.com/catalogue/page-1.html
+2024-07-24 10:15:03,829 - INFO - Scraping page 2 at http://books.toscrape.com/catalogue/page-2.html
+2024-07-24 10:15:08,264 - INFO - Scraping page 3 at http://books.toscrape.com/catalogue/page-3.html
+2024-07-24 10:15:12,664 - INFO - Scraping page 4 at http://books.toscrape.com/catalogue/page-4.html
+2024-07-24 10:15:17,326 - INFO - Scraping page 5 at http://books.toscrape.com/catalogue/page-5.html
+2024-07-24 10:15:21,997 - INFO - Data saved to scraped_data.xlsx
+2024-07-24 10:15:22,002 - INFO - Data scraped successfully from http://books.toscrape.com
