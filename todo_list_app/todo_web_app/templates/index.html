@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"], input[type="date"], select {
+            flex: 1;
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background: #f9f9f9;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .task-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .task-info span {
+            margin-right: 15px;
+        }
+
+        .task-actions a {
+            margin-left: 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .task-actions a:hover {
+            text-decoration: underline;
+        }
+
+        .priority-low { color: green; }
+        .priority-medium { color: orange; }
+        .priority-high { color: red; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Todo List</h1>
+        <form action="/add" method="POST">
+            <input type="text" name="task" placeholder="Enter a new task" required>
+            <input type="date" name="due_date" required>
+            <select name="priority" required>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <button type="submit">Add Task</button>
+        </form>
+
+        <form action="/" method="GET">
+            <input type="text" name="search" placeholder="Search tasks" value="{{ search_query }}">
+            <button type="submit">Search</button>
+        </form>
+
+        <ul>
+            {% for task in tasks %}
+            <li>
+                <div class="task-info">
+                    <span>{{ task['task'] }} {% if task['completed'] %}(Completed){% endif %}</span>
+                    <span>Due: {{ task['due_date'] }}</span>
+                    <span class="priority-{{ task['priority'] }}">Priority: {{ task['priority'] }}</span>
+                </div>
+                <div class="task-actions">
+                    <a href="{{ url_for('complete_task', task_id=loop.index0) }}">Complete</a>
+                    <a href="{{ url_for('edit_task', task_id=loop.index0) }}">Edit</a>
+                    <a href="{{ url_for('delete_task', task_id=loop.index0) }}">Delete</a>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>
