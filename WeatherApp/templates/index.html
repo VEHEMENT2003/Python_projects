@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Weather App</h1>
+        <form action="/" method="POST" class="city-form">
+            <input type="text" name="city" placeholder="Enter a city" required>
+            <button type="submit">Get Weather</button>
+        </form>
+
+        {% if weather %}
+            {% if 'error' in weather %}
+                <div class="error">{{ weather['error'] }}</div>
+            {% else %}
+                <div class="weather-info">
+                    <h2>{{ weather['name'] }}, {{ weather['sys']['country'] }}</h2>
+                    <div class="weather-icon">
+                        <img src="http://openweathermap.org/img/wn/{{ weather['weather'][0]['icon'] }}@2x.png" alt="Weather Icon">
+                    </div>
+                    <p class="temperature">{{ weather['main']['temp'] }}°C</p>
+                    <p class="description">{{ weather['weather'][0]['description'].capitalize() }}</p>
+                    <p>Humidity: {{ weather['main']['humidity'] }}%</p>
+                    <p>Wind Speed: {{ weather['wind']['speed'] }} m/s</p>
+                    <p>Sunrise: {{ weather['sys']['sunrise'] | timestamp_to_time }}</p>
+                    <p>Sunset: {{ weather['sys']['sunset'] | timestamp_to_time }}</p>
+                </div>
+            {% endif %}
+        {% endif %}
+    </div>
+</body>
+</html>
