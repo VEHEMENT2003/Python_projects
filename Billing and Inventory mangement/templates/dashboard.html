@@ -1,0 +1,15 @@
+<form method="POST" action="{{ url_for('add_item') }}">
+    <div>
+        <label>Item Name</label>
+        <input type="text" name="name" required>
+    </div>
+    <div>
+        <label>Price</label>
+        <input type="text" name="price" required>
+    </div>
+    <div>
+        <label>Quantity</label>
+        <input type="number" name="quantity" required>
+    </div>
+    <button type="submit">Add Item</button>
+</form>
