@@ -1,0 +1,8 @@
+{
+    "sentiment_distribution": {
+        "positive": 73,
+        "neutral": 23,
+        "negative": 4
+    },
+    "average_sentiment_score": 0.404323
+}
